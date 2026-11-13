@@ -1,0 +1,6 @@
+numpy
+opencv-python
+cflib>=0.1.30
+matplotlib
+ultralytics
+scipy
