@@ -1,0 +1,31 @@
+#VRML_SIM R2025a utf8
+
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/backgrounds/protos/TexturedBackground.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/backgrounds/protos/TexturedBackgroundLight.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/floors/protos/Floor.proto"
+EXTERNPROTO "../protos/Crazyflie.proto"
+
+WorldInfo {
+  info [
+    "Lab 1 — progressive navigation square (Webots)."
+    "Edit step1_position.py … step4_acceleration.py in Lab_1_navigation/."
+    "Set STAGE in crazyflie_controller_lab_1_navigation.py and reload."
+  ]
+  title "Lab 1 navigation"
+  basicTimeStep 16
+}
+Viewpoint {
+  orientation -0.18 0.22 0.96 2.15
+  position -1.8 -1.6 1.6
+  follow "Crazyflie"
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+Floor {
+}
+Crazyflie {
+  controller "crazyflie_controller_lab_1_navigation"
+  supervisor TRUE
+}
